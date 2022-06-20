@@ -7,7 +7,7 @@ import TodoList from './components/TodoList';
 function App() {
   const [inputText, setInputText] = useState("")
   const [todos, setTodos] = useState ([])
-  const [status, SetStatus] = useState('all')
+  const [status, setStatus] = useState('all')
   const [filteredTodos, setFilteredTodos] = useState([])
 
   //USE EFFECT
@@ -38,7 +38,7 @@ function App() {
       todos= {todos} 
       setTodos = {setTodos} 
       setInputText={setInputText} 
-      SetStatus={SetStatus}
+      setStatus={setStatus}
       />
       <TodoList   
       filteredTodos={filteredTodos} 
